@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
-import { contactCard, contactInfo, contactName, contactNumber, deleteBtn, person, telephone } from './contact.module.css'
-import { deleteContact } from '../../redux/contactsSlice';
+import { contactCard, contactInfo, contactName, contactNumber, deleteBtn, person, telephone } from './contact.module.css';
+import { deleteContact } from '../../redux/contactsOps';
+
 
 const Contact = ({ contact }) => {
     const dispatch = useDispatch();
@@ -30,3 +31,4 @@ const Contact = ({ contact }) => {
 }
 
 export default Contact;
+
